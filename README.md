@@ -3,7 +3,7 @@
 </h1>
 
 <h4 align="center">
-  Esta é a 2ª e mais recente versão do meu portfólio pessoal. Criado com o objetivo de apresentar um pouco sobre mim e meus conhecimentos. Além de  mostrar meus projetos ao decorrer de minha carreira
+  Esta é a 2ª e mais recente versão do meu portfólio pessoal. Criado com o objetivo de apresentar um pouco sobre mim e meus conhecimentos. Além de  mostrar meus projetos no decorrer de minha carreira
 </h4>
 
 ![Resultado final do projeto](demo/intro.png)
