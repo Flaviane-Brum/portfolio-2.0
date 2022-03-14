@@ -1,0 +1,19 @@
+@import "./global/global.css";
+@import "./utilities/colors.css";
+@import "./utilities/typography.css";
+@import "./utilities/components.css";
+
+/* header */
+@import "./global/header.css";
+
+/* footer */
+@import "./global/footer.css";
+
+/* home */
+@import "./home/intro.css";
+@import "./home/about.css";
+@import "./home/projects.css";
+@import "./home/skills.css";
+
+/* projeto */
+@import "./project/project.css";
