@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Olá me chamo Flaviane Brum, sou uma desenvolvedora Front-end em busca de uma oportunidade. Portfólio feito para apresentar algumas informações e projetos feitos por mim!"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <link rel="preload" href="css/style.min.css" as="style" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel=" icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <script
+      src="https://kit.fontawesome.com/f95f157815.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Portfólio | Home</title>
+  </head>
+  <body>
+    <header class="header-bg">
+      <div class="header container">
+        <a href="./" class="logo">
+          <img
+            src="./img/logo.svg"
+            width="141"
+            height="32"
+            alt="Flaviane Brum"
+          />
+        </a>
+
+        <nav aria-label="primaria" class="menu-desktop">
+          <ul class="header-menu poppins-18 color-0">
+            <li><a href="#quem-sou">Quem-sou</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#conhecimentos">Conhecimentos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <nav class="menu-mobile">
+          <ul class="menu-items" id="menu">
+            <li class="left-panel">
+              <a href="#quem-sou" class="menu-item" aria-label="Quem-sou">
+                <i class="fa-solid fa-user"></i>
+              </a>
+              <a href="#projetos" class="menu-item" aria-label="Projetos"
+                ><i class="fa-solid fa-camera"></i
+              ></a>
+            </li>
+            <li class="right-panel">
+              <a
+                href="#conhecimentos"
+                class="menu-item"
+                aria-label="Conhecimentos"
+                ><i class="fa-solid fa-graduation-cap"></i
+              ></a>
+              <a href="#contato" class="menu-item" aria-label="Contato">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+          <div
+            class="toggle-btn poppins-16-b"
+            aria-controls="menu"
+            aria-label="Abrir menu"
+          >
+            Menu
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="intro-bg">
+      <div class="intro container top-bottom">
+        <div class="intro-content">
+          <div class="intro-name color-0 delayMediumReveal load-hidden">
+            <span class="roboto-24 color-5 span">Olá, sou</span>
+            <h1 class="poppins-64 color-0">
+              Flaviane Brum<span class="color-p5">.</span>
+            </h1>
+            <span class="typewriter roboto-24 color-5">
+              Dev Front End e Estudante de ADS
+            </span>
+          </div>
+          <div class="cv-container">
+            <a
+              href="https://drive.google.com/file/d/16XZ2SsI8SKsoifLMV2QxzqkNHvQx82jF/view?usp=sharing"
+              target="_blank"
+              class="poppins-16-b"
+              ><i class="fa-solid fa-file-arrow-down"></i>Download CV</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1WqLwStvtrHWefUVkRIjDZBR6sWNOsAYb/view?usp=sharing"
+              target="_blank"
+              class="poppins-16-b"
+              ><i class="fa-solid fa-file-arrow-down"></i>Black CV</a
+            >
+          </div>
+        </div>
+        <div class="intro-img">
+          <img
+            src="./img/eu.avif"
+            alt="Foto de Flaviane Brum"
+            width="536"
+            height="690"
+          />
+        </div>
+      </div>
+    </main>
+
+    <article class="about-bg" id="quem-sou">
+      <div class="about container top-bottom">
+        <div class="about-img">
+          <img
+            src="./img/flavi.gif"
+            alt="Gif de uma menina piscando"
+            height="600"
+            width="600"
+          />
+          <!-- <video autoplay loop muted playsinline>
+            <source src="./img/flavi.webm" type="video/webm" />
+
+            Your browser does not support HTML5 video.
+            <a href="/img/flavi.gif">Click here to view original GIF</a>
+          </video> -->
+          <picture class="js">
+            <source
+              media="(max-width: 800px)"
+              width="40"
+              height="40"
+              srcset="./img/icones/js-brands.svg"
+            />
+
+            <img
+              src="./img/icones/js-brands.svg"
+              width="80"
+              height="80"
+              alt="Logo do Javascript."
+            />
+          </picture>
+          <picture class="css">
+            <source
+              media="(max-width: 800px)"
+              width="40"
+              height="40"
+              srcset="./img/icones/css3-alt-brands.svg"
+            />
+            <img
+              src="./img/icones/css3-alt-brands.svg"
+              width="80"
+              height="80"
+              alt="Logo do css."
+            />
+          </picture>
+          <picture class="html">
+            <source
+              media="(max-width: 800px)"
+              srcset="./img/icones/html5-brands.svg"
+              width="40"
+              height="40"
+            />
+            <img
+              src="./img/icones/html5-brands.svg"
+              width="80"
+              height="80"
+              alt="Logo do Html5."
+            />
+          </picture>
+        </div>
+        <div class="about-content">
+          <h2 class="poppins-64 color-0 load-hidden delayLargeReveal">
+            Quem sou<span class="color-p5">.</span>
+          </h2>
+          <p class="roboto-24 color-5 delayExtraBigReveal load-hidden">
+            Estudante de
+            <strong class="color-p3"
+              >Análise e desenvolvimento de sistemas</strong
+            >, estou no 5º semestre, apaixonada por tecnologia, em busca de uma
+            oportunidade na área de
+            <strong class="color-p3">desenvolvimento Web</strong>.
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <article class="top-bottom portfolio" id="projetos">
+      <h2 class="poppins-64 color-11">
+        Projetos<span class="color-p5">.</span>
+      </h2>
+
+      <ul class="projects-list">
+        <li class="projects-item">
+          <a href="./projetos/relogio.html">
+            <img
+              src="./img/relogio.avif"
+              alt="Foto do projeto Relógio Pikachu"
+              width="1573"
+              height="1040"
+            />
+            <h3 class="poppins-32 color-c11">Relógio Pikachu</h3>
+          </a>
+        </li>
+        <li class="projects-item">
+          <a href="./projetos/pokedex.html">
+            <img
+              src="./img/poke.avif"
+              alt="Foto do projeto Pokédex"
+              width="1566"
+              height="1040"
+            />
+            <h3 class="poppins-32 color-c11">Pokédex</h3>
+          </a>
+        </li>
+        <li class="projects-item">
+          <a href="./projetos/disney.html">
+            <img
+              src="./img/disney-monitor.avif"
+              alt="Foto do projeto DisneyFlix"
+              width="1565"
+              height="1040"
+            />
+            <h3 class="poppins-32 color-c11">DisneyFlix</h3>
+          </a>
+        </li>
+      </ul>
+      <div class="btn-repo">
+        <a
+          href="https://github.com/Flaviane-Brum?tab=repositories"
+          target="_blank"
+          class="poppins-24 color-p8"
+          >Repositórios no GitHub</a
+        >
+      </div>
+    </article>
+
+    <article class="skills-bg" id="conhecimentos">
+      <div class="skills container top-bottom">
+        <h2 class="poppins-64 color-0">
+          Conhecimentos<span class="color-p5">.</span>
+        </h2>
+        <div class="skills-content">
+          <div class="skills-item intervalCardReveal load-hidden">
+            <img src="./img/dec/dec1.svg" alt="" />
+            <h3 class="poppins-16 color-0 education-icon">
+              <i class="fa-solid fa-graduation-cap"></i>Formação
+            </h3>
+            <div class="education">
+              <div class="education-item">
+                <span class="roboto-14 color-5">Tecnólogo</span>
+                <h4 class="poppins-18 color-0">
+                  Análise e desenvolvimento de sistemas
+                </h4>
+                <span class="roboto-14 color-5">FAQI (Cursando)</span>
+              </div>
+              <div class="education-item">
+                <span class="roboto-14 color-5">Técnico</span>
+                <h4 class="poppins-18 color-0">
+                  Curso técnico informática para internet
+                </h4>
+                <span class="roboto-14 color-5">Colégio Protásio Alves</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills-item intervalCardReveal load-hidden">
+            <div class="experience">
+              <img src="./img/dec/dec3.svg" alt="" />
+              <h3 class="poppins-16 color-0 experience-icon">
+                <i class="fa-solid fa-briefcase"></i>Experiência
+              </h3>
+              <p class="roboto-16 color-5">
+                Estou sempre em busca de melhores práticas e também em busca de
+                aprender/experimentar novas tecnologias. Minhas experiências
+                atuais são os projetos que fiz, e os que ainda estou
+                desenvolvendo. Eles podem ser encontrados no meu
+                <a
+                  href="https://github.com/Flaviane-Brum?tab=repositories"
+                  target="_blank"
+                  class="color-p5"
+                  >Github</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="skills-item intervalCardReveal load-hidden">
+            <img src="./img/dec/dec2.svg" alt="" />
+
+            <h3 class="poppins-16 color-0 courses-icon">
+              <i class="fa-solid fa-book-open"></i> Cursos / Especializações
+            </h3>
+            <ul class="courses">
+              <li class="roboto-18 color-5">
+                Web Design Completo <span class="roboto-18 color-7">44H</span>
+              </li>
+              <li class="roboto-18 color-5">
+                CSS com SASS <span class="roboto-18 color-7">12H</span>
+              </li>
+              <li class="roboto-18 color-5">
+                React Completo <span class="roboto-18 color-7">36H</span>
+              </li>
+              <li class="roboto-18 color-5">
+                Frontend Do Zero ao Profissional
+                <span class="roboto-18 color-7">36H</span>
+              </li>
+              <li class="roboto-18 color-5">
+                HTML e CSS para Iniciantes completo
+                <span class="roboto-18 color-7">23H</span>
+              </li>
+              <li class="roboto-18 color-5">
+                JavaScript Completo ES6+
+                <span class="roboto-18 color-7">74H</span>
+              </li>
+              <li class="roboto-18 color-5">
+                Automação Front End com NPM
+                <span class="roboto-18 color-7">8H</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-item intervalCardReveal load-hidden">
+            <img src="./img/dec/dec4.svg" alt="" class="dec" />
+
+            <h3 class="poppins-16 color-0 abilities-icon">
+              <i class="fa-solid fa-code"></i>Habilidades
+            </h3>
+
+            <ul class="abilities">
+              <li>
+                <img
+                  src="./img/icones/html5-brands.svg"
+                  alt="Icone HTML5"
+                  height="80"
+                  width="80"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/icones/css3-alt-brands.svg"
+                  alt="Icone CSS"
+                  height="80"
+                  width="80"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/icones/js-brands.svg"
+                  alt="Icone Javascript"
+                  height="80"
+                  width="80"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/icones/react-brands.svg"
+                  alt="Icone React Js"
+                  height="80"
+                  width="80"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/icones/sass-brands.svg"
+                  alt="Icone Sass"
+                  height="80"
+                  width="80"
+                />
+              </li>
+              <li>
+                <img
+                  src="./img/icones/github-brands.svg"
+                  alt="Icone Github"
+                  height="80"
+                  width="80"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="footer-bg" id="contato">
+      <div class="footer container top-bottom">
+        <div class="footer-logo">
+          <img
+            src="./img/logo.svg"
+            width="141"
+            height="33"
+            alt="Flaviane Brum"
+          />
+        </div>
+        <div class="footer-contact">
+          <h3 class="roboto-24 color-0">Contato</h3>
+          <ul class="roboto-18 color-5">
+            <li><a href="tel:+5551993833529">(51) 99383-3529</a></li>
+            <li>
+              <a href="mailto:flavianebs3@gmail.com">flavianebs3@gmail.com</a>
+            </li>
+            <li>Porto Alegre</li>
+            <li>Rio Grande do Sul -RS</li>
+          </ul>
+          <div class="footer-social">
+            <a
+              aria-label="Link para o Github"
+              href="https://github.com/Flaviane-Brum?tab=repositories"
+              target="_blank"
+              ><img
+                src="./img/icones/github-p.svg"
+                alt="Icone do  Github"
+                width="32"
+                height="32"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/flaviane-brum/"
+              target="_blank"
+              aria-label="Link para o Linkedin"
+              ><img
+                src="./img/icones/linkedin.svg"
+                alt="Icone do Linkedin"
+                width="32"
+                height="32"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <h3 class="roboto-24 color-0">informações</h3>
+
+          <nav aria-label="Secundária">
+            <ul class="footer-menu poppins-18 color-5">
+              <li><a href="#quem-sou">Quem-sou</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+              <li><a href="#conhecimentos">Conhecimentos</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer-copy roboto-18 color-6">
+          Criado com <span class="color-p5">ღ</span> por Flaviane Brum
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/script.js"></script>
+  </body>
+</html>
