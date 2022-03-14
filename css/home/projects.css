@@ -1,0 +1,111 @@
+.portfolio {
+  background: url("../../img/dec/top-right.svg") no-repeat top 40px right 40px;
+}
+.portfolio h2 {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.projects-list {
+  display: flex;
+  gap: 40px;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.25rem 1.25rem 1.25rem;
+  max-width: 1400px;
+  overflow-x: auto;
+  margin-bottom: 40px;
+}
+#pokedex .projects-list,
+#disney .projects-list,
+#relogio .projects-list {
+  padding: 0 0 1.25rem 0;
+}
+.projects-list::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+  height: 12px;
+}
+.projects-list::-webkit-scrollbar-track {
+  background: var(--color-p3); /* color of the tracking area */
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 20%);
+}
+.projects-list::-webkit-scrollbar-thumb {
+  background-color: var(--color-p5); /* color of the scroll thumb */
+  border-radius: 4px; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 20%);
+}
+.projects-item {
+  min-width: 400px;
+  flex: 1;
+}
+.projects-item h3 {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+.projects-item h3::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background-color: var(--color-p5);
+  transition: width 0.2s;
+  margin-right: 8px;
+}
+.projects-item img {
+  margin-bottom: 16px;
+  filter: drop-shadow(1px 1px 1px #09062c);
+}
+
+.projects-item a:hover h3::before {
+  width: 24px;
+}
+
+.btn-repo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.btn-repo a {
+  position: relative;
+}
+.btn-repo a::after {
+  content: "";
+  display: inline-block;
+  height: 2px;
+  width: 0px;
+  background: var(--color-p5);
+  margin-top: 35px;
+  transition: 0.3s;
+  position: absolute;
+  left: 0;
+}
+
+.btn-repo a:hover::after {
+  width: 100%;
+}
+@media (max-width: 800px) {
+  .projects-item img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio {
+    background: none;
+  }
+  .portfolio h2 {
+    font-size: 2.25rem;
+  }
+  .projects-item h3 {
+    font-size: 1.5rem;
+  }
+  .projects-list {
+    margin-bottom: 40px;
+  }
+}
