@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projeto desenvolvido para pôr em prática os conceitos aprendidos
+      em Javascript, Html5 e CSS3."
+    />
+    <link rel=" icon" href="../favicon.svg" type="image/svg+xml" />
+
+    <link rel="preload" href="../css/style.min.css" as="style" />
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <script
+      src="https://kit.fontawesome.com/f95f157815.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Projeto Relógio Pikachu | Portfólio</title>
+  </head>
+  <body id="relogio">
+    <header class="header-bg">
+      <div class="header container">
+        <a href="../" class="logo">
+          <img
+            src="../img/logo.svg"
+            width="141"
+            height="32"
+            alt="Flaviane Brum"
+          />
+        </a>
+
+        <nav aria-label="primaria" class="menu-desktop">
+          <ul class="header-menu poppins-18 color-0">
+            <li><a href="../#quem-sou">Quem-sou</a></li>
+            <li><a href="../#projetos">Projetos</a></li>
+            <li><a href="../#conhecimentos">Conhecimentos</a></li>
+            <li><a href="../#contato">Contato</a></li>
+          </ul>
+        </nav>
+        <nav class="menu-mobile">
+          <ul class="menu-items" id="menu">
+            <li class="left-panel">
+              <a href="../#quem-sou" class="menu-item">
+                <i class="fa-solid fa-address-card"> </i>
+              </a>
+              <a href="../#projetos" class="menu-item"
+                ><i class="fa-solid fa-laptop-code"></i
+              ></a>
+            </li>
+            <li class="right-panel">
+              <a href="../#conhecimentos" class="menu-item"
+                ><i class="fa-solid fa-graduation-cap"></i
+              ></a>
+              <a href="../#contato" class="menu-item">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+          <div
+            class="toggle-btn poppins-16-b"
+            aria-controls="menu"
+            aria-label="Abrir menu"
+          >
+            Menu
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main class="project-bg">
+      <div class="container top-bottom project-container">
+        <p class="roboto-24-b color-5 title slide-in-top">Projeto</p>
+        <h1 class="poppins-64 color-0 slide-in-top">
+          Relógio Pikachu<span class="color-p5">.</span>
+        </h1>
+
+        <div class="project slide-in-top">
+          <div class="project-img">
+            <img
+              src="../img/relogio-noite.jpg"
+              alt="Foto projeto Relógio Pikachu noite"
+            />
+            <img
+              src="../img/relogio-manha.jpg"
+              alt="Foto projeto Relógio Pikachu manhã"
+            />
+            <img
+              src="../img/relogio-tarde.jpg"
+              alt="Foto projeto Relógio Pikachu tarde"
+            />
+          </div>
+
+          <div class="project-content">
+            <p class="roboto-18 color-5">
+              Projeto desenvolvido para pôr em prática os conceitos aprendidos
+              em Javascript, Html5 e CSS3.
+            </p>
+            <ul class="project-links poppins-12 color-6">
+              <li>
+                <img src="../img/icones/link.svg" alt="" />
+                <a href="">Link do site</a>
+              </li>
+              <li>
+                <img src="../img/icones/link.svg" alt="" />
+                <a href="">Link do código no GitHub</a>
+              </li>
+            </ul>
+            <h2 class="poppins-12 color-0">Informações</h2>
+            <ul class="project-details">
+              <li>
+                <img src="../img/icones/html_p.svg" alt="Icone HTML5" />
+                <h3 class="poppins-18 color-0">HTML5</h3>
+                <p class="roboto-14 color-5">
+                  É uma linguagem de marcação utilizada na construção de páginas
+                  na Web.
+                </p>
+              </li>
+              <li>
+                <img src="../img/icones/css_p.svg" alt="Icone CSS3" />
+                <h3 class="poppins-18 color-0">CSS3</h3>
+                <p class="roboto-14 color-5">
+                  Folhas de Estilo em Cascatas. Criado com o propósito de
+                  estilizar as paginas HTML
+                </p>
+              </li>
+              <img class="divider" src="../img/dec/dec6.svg" alt="" />
+              <li>
+                <img src="../img/icones/js_p.svg" alt="Icone Javascript" />
+                <h3 class="poppins-18 color-0">Javascript</h3>
+                <p class="roboto-14 color-5">
+                  É uma linguagem de programação interpretada estruturada, de
+                  script em alto nível com tipagem dinâmica fraca e
+                  multiparadigma.
+                </p>
+              </li>
+            </ul>
+
+            <h2 class="poppins-12 color-0">Funcionalidades</h2>
+            <ul class="project-features roboto-16 color-4">
+              <li>
+                Imagem do fundo mudando de acordo com o horário.
+                <img src="../img/icones/check.svg" alt="" />
+              </li>
+
+              <li>
+                Responsivo
+                <img src="../img/icones/check.svg" alt="" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <article class="top-bottom container other-projects">
+      <h2 class="poppins-64 color-11">
+        Escolha o projeto<span class="color-p5">.</span>
+      </h2>
+
+      <ul class="projects-list" id="projects-list">
+        <li class="projects-item">
+          <a href="./pokedex.html">
+            <img
+              src="../img/poke.png"
+              alt="Foto do projeto Pokédex"
+              width="1573"
+              height="1040"
+            />
+            <h3 class="poppins-32 color-c11">Pokédex</h3>
+          </a>
+        </li>
+
+        <li class="projects-item">
+          <a href="./disney.html">
+            <img
+              src="../img/disney-monitor.png"
+              alt="Foto do projeto DisneyFlix"
+              width="1572"
+              height="1040"
+            />
+            <h3 class="poppins-32 color-c11">DisneyFlix</h3>
+          </a>
+        </li>
+      </ul>
+      <a
+        href="https://github.com/Flaviane-Brum?tab=repositories"
+        class="poppins-24 color-p8 btn-repo"
+        >Repositórios no GitHub</a
+      >
+    </article>
+    <footer class="footer-bg" id="footer">
+      <div class="footer container top-bottom">
+        <div class="footer-logo">
+          <img src="../img/logo.svg" alt="Flaviane Brum" />
+        </div>
+        <div class="footer-contact">
+          <h3 class="roboto-24 color-0">Contato</h3>
+          <ul class="roboto-18 color-5">
+            <li><a href="tel:+5551993833529">(51) 99383-3529</a></li>
+            <li>
+              <a href="mailto:flavianebs3@gmail.com">flavianebs3@gmail.com</a>
+            </li>
+            <li>Porto Alegre</li>
+            <li>Rio Grande do Sul -RS</li>
+          </ul>
+          <div class="footer-social">
+            <a
+              aria-label="Link para o Github"
+              href="https://github.com/Flaviane-Brum?tab=repositories"
+              target="_blank"
+              ><img
+                src="../img/icones/github-p.svg"
+                alt="Icone do  Github"
+                width="32"
+                height="32"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/flaviane-brum/"
+              target="_blank"
+              aria-label="Link para o Linkedin"
+              ><img
+                src="../img/icones/linkedin.svg"
+                alt="Icone do Linkedin"
+                width="32"
+                height="32"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-info">
+          <h3 class="roboto-24 color-0">informações</h3>
+
+          <nav aria-label="Secundária">
+            <ul class="footer-menu poppins-18 color-5">
+              <li><a href="../#quem-sou">Quem-sou</a></li>
+              <li><a href="../#projetos">Projetos</a></li>
+              <li><a href="../#conhecimentos">Conhecimentos</a></li>
+              <li><a href="../#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <p class="footer-copy roboto-18 color-6">
+          Criado com <span class="color-p5">ღ</span> por Flaviane Brum
+        </p>
+      </div>
+    </footer>
+    <script type="module" src="../js/script.js"></script>
+  </body>
+</html>
