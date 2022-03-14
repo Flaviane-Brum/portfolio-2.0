@@ -1,0 +1,112 @@
+.intro-bg {
+  background: var(--color-12) url("../../img/dec/bottom-left.svg") no-repeat
+    bottom 40px left 20px;
+  position: relative;
+}
+.intro {
+  display: grid;
+  gap: 0px 40px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.intro-name {
+  margin-bottom: 32px;
+}
+.intro-name h1 {
+  margin-bottom: 8px;
+}
+
+.typewriter:after {
+  content: "|";
+  margin-left: 8px;
+  opacity: 1;
+  -webkit-animation: blink 1s infinite;
+  animation: blink 1s infinite;
+  color: var(--color-p5);
+}
+.intro-img {
+  position: relative;
+  max-width: 320px;
+  -webkit-animation: MoveUpDown 4s linear infinite;
+  animation: MoveUpDown 4s linear infinite;
+}
+.intro-img img {
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+.cv-container {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.cv-container a {
+  color: var(--color-5);
+}
+.cv-container a:hover {
+  color: var(--color-0);
+}
+.cv-container a i {
+  margin-right: 8px;
+  color: var(--color-p5);
+}
+
+@media (max-width: 800px) {
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .intro-img {
+    grid-row: 1;
+    margin: 0 auto;
+    max-width: 300px;
+  }
+  .cv-container {
+    justify-content: center;
+  }
+  .intro-name h1 {
+    margin-bottom: 8px;
+  }
+  .intro-content {
+    text-align: center;
+  }
+  .intro-content span {
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 600px) {
+  .intro-bg {
+    background: var(--color-12);
+  }
+  .intro {
+    padding-bottom: 80px;
+  }
+  .cv-container {
+    gap: 16px;
+  }
+  .intro-name {
+    margin-bottom: 16px;
+  }
+  .intro-name h1 {
+    font-size: 2.25rem;
+    max-width: 20ch;
+    margin: 0 auto;
+    margin-bottom: 8px;
+  }
+  .intro-name .span {
+    font-size: 1rem;
+  }
+  .intro-name .typewriter {
+    font-size: 1rem;
+  }
+  .intro-img {
+    max-width: 200px;
+    grid-row: 1;
+    clip-path: none;
+    border-radius: 4px;
+    margin: 0 auto;
+    animation: none;
+    align-self: self-end;
+  }
+}
