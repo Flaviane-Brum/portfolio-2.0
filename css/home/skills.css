@@ -1,0 +1,189 @@
+.skills-bg {
+  background: url("../../img/dec/top-right.svg") no-repeat top 40px right 40px,
+    url("../../img/dec/bottom-right.svg") no-repeat right 40px bottom 40px,
+    var(--color-11);
+}
+
+.skills-content {
+  display: grid;
+  grid-template-columns: 5fr 6fr;
+  gap: 92px;
+}
+
+.skills h2 {
+  margin-bottom: 40px;
+}
+.skills-item {
+  position: relative;
+}
+.skills-item h3 {
+  margin-bottom: 32px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.skills-item h3 i {
+  color: var(--color-p4);
+}
+
+.education {
+  display: flex;
+  gap: 20px;
+}
+.skills-item p {
+  max-width: 55ch;
+}
+.skills-item a {
+  display: inline-block;
+  position: relative;
+}
+.skills-item a:after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0px;
+  background: var(--color-p5);
+  margin-top: 2px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.skills-item a:hover:after {
+  width: 100%;
+}
+.education-item {
+  background: var(--color-12);
+  padding: 1.25rem;
+  border-radius: 4px;
+  position: relative;
+}
+.skills-item:nth-child(1) {
+  position: relative;
+}
+.skills-item:nth-child(1) img {
+  position: absolute;
+  right: -50px;
+}
+.skills-item:nth-child(2) {
+  position: relative;
+}
+
+.skills-item:nth-child(2) img {
+  position: absolute;
+  right: 0px;
+  bottom: -40px;
+}
+.skills-item:nth-child(3) {
+  position: relative;
+}
+
+.skills-item:nth-child(3) img {
+  position: absolute;
+  right: 0px;
+  top: -60px;
+}
+.skills-item:nth-child(4) {
+  position: relative;
+}
+
+.skills-item:nth-child(4) .dec {
+  position: absolute;
+  left: -50px;
+  top: -60px;
+}
+
+.education-item span:first-child {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.education-item h4 {
+  margin-bottom: 32px;
+}
+
+.education-item::before {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 20px;
+  background: var(--gradient);
+  position: absolute;
+  left: -4px;
+  top: 50px;
+}
+.courses li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.courses li span {
+  text-align: right;
+  flex: 1;
+}
+.courses li::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+
+  background: var(--gradient);
+}
+
+.abilities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.abilities li {
+  background-color: var(--color-12);
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+@media (max-width: 800px) {
+  .skills-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .skills-item h3 {
+    margin-bottom: 16px;
+  }
+
+  .education {
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+  }
+  .experience {
+    margin-bottom: 32px;
+  }
+  .skills-item img {
+    display: none;
+  }
+  .abilities img {
+    display: block;
+  }
+  .skills-item p {
+    max-width: 55ch;
+  }
+  .courses {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills-bg {
+    background: var(--color-11);
+  }
+  .skills h2 {
+    font-size: 2.25rem;
+  }
+}
+@media (max-width: 400px) {
+  .abilities li {
+    max-width: 90px;
+  }
+}
